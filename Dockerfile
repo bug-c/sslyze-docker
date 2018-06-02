@@ -1,10 +1,11 @@
-FROM debian:jessie
+FROM ubuntu:bionic
 
 MAINTAINER Phocean <jc@phocean.net>
 
-# Samba
-RUN apt-get update && apt-get install -yq python-dev build-essential python-pip && rm -rf /var/lib/apt/lists/*
-RUN pip install sslyze
+RUN apt-get update &&\
+  apt-get install -yq python-dev build-essential python-pip &&\
+  pip install sslyze &&\
+  rm -rf /var/lib/apt/lists/*
 
-ENTRYPOINT ["/usr/local/bin/sslyze_cli.py"]
+ENTRYPOINT ["/usr/local/bin/sslyze"]
 CMD ["-h"]
