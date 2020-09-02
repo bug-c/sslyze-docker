@@ -1,12 +1,7 @@
-FROM ubuntu:bionic
+FROM python:3.8-buster
 
 COPY requirements.txt .
-
-RUN apt-get update && \
-    apt-get install -yq python3-dev python3-pip && \
-    pip3 install --no-cache-dir -r requirements.txt && \
-    apt autoremove -y && \
-    rm -rf /var/lib/apt/lists/*
+RUN pip install --no-cache-dir -r requirements.txt 
 
 ENTRYPOINT ["/usr/local/bin/sslyze"]
 CMD ["-h"]
