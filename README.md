@@ -1,4 +1,12 @@
 Docker container for the popular SSLyze tool.
+==============
+
+[![Travis CI](https://img.shields.io/travis/bug-c/sslyze-docker/master.svg)](https://travis-ci.org/bug-c/sslyze-docker/branches) 
+[![Docker Pulls](https://img.shields.io/docker/pulls/ctdc/sslyze.svg)](https://hub.docker.com/r/ctdc/sslyze/) 
+[![Docker Stars](https://img.shields.io/docker/stars/ctdc/sslyze.svg)](https://hub.docker.com/r/ctdc/sslyze/) 
+[![](https://images.microbadger.com/badges/image/ctdc/sslyze.svg)](https://microbadger.com/images/ctdc/sslyze "Get your own image badge on microbadger.com")
+[![Docker Build](https://img.shields.io/docker/automated/ctdc/sslyze.svg)](https://cloud.docker.com/swarm/ctdc/repository/docker/ctdc/sslyze/builds)
+
 
 SSLyze is a fast and powerful SSL/TLS scanning library.
 
