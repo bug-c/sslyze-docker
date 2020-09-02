@@ -1,0 +1,10 @@
+dist: trusty
+
+jobs:
+  include:
+    - stage: build docker image
+      script:
+      - docker build -t sslyze .
+    - stage: test
+      script:
+      - docker run --rm --name sslyze -it sslyze
